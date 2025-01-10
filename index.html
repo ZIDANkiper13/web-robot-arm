@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Visual Servoing for Robot Manipulator</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-lg-5">
+                <a class="navbar-brand" href="#">VISUAL SERVOING FOR ROBOT MANIPULATOR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Download</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home" class="py-5">
+            <div class="container px-lg-5">
+                <div class="text-center">
+                    <h1 class="display-5 fw-bold">Welcome to Visual Servoing for Robot Manipulator</h1>
+                    <p class="fs-4">Visual servoing adalah sebuah teknik kontrol yang menggunakan umpan balik visual (biasanya dari kamera) untuk mengontrol pergerakan sebuah robot manipulator. Teknik ini memanfaatkan informasi visual untuk menyesuaikan posisi dan orientasi robot agar mencapai tujuan tertentu. Visual servoing sangat populer dalam aplikasi robotika karena memberikan kemampuan adaptasi terhadap lingkungan yang dinamis atau tidak terstruktur.</p>
+                    <a class="btn btn-primary btn-lg" href="#about">Learn More</a>
+                </div>
+
+                <!-- Three Supporting Images -->
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-4 text-center">
+                        <img src="assets/gambar1.jpg" class="img-fluid rounded" alt="Robot Manipulator 1">
+                    </div>
+                    <div class="col-md-4 mb-4 text-center">
+                        <img src="assets/gambar2.jpg" class="img-fluid rounded" alt="Robot Manipulator 2">
+                    </div>
+                    <div class="col-md-4 mb-4 text-center">
+                        <img src="assets/gambar3.jpg" class="img-fluid rounded" alt="Robot Manipulator 3">
+                    </div>
+                </div>
+
+                <!-- Single Supporting Link -->
+                <div class="text-center mt-4">
+                    <a href="https://www.example.com" target="_blank" class="btn btn-secondary">Visit Our Research</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <header id="about" class="py-5">
+            <div class="container px-lg-5">
+                <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
+                    <div class="m-4 m-lg-5">
+                        <h1 class="display-5 fw-bold">Learn and Download</h1>
+                        <p class="fs-4">mempelajari/memahami design robot, program robot, app pergerakan, dan desain wiring</p>
+                        <p class="fs-5 text-start">Our resources include the following:</p>
+                        <ul class="fs-5 text-start">
+                            <li>
+                                <strong>Design:</strong> Desain robot arm 6 DOF (Degrees of Freedom) dengan visual servoing untuk manipulasi robot adalah sistem yang dirancang untuk memungkinkan robot memanipulasi objek atau melakukan tugas dengan presisi tinggi menggunakan umpan balik visual.
+                                <div class="text-center mt-3">
+                                    <img src="assets/robot.jpg" class="img-fluid rounded" alt="Design Resource">
+                                </div>
+                            </li>
+                            <li>
+                                <strong>Program:</strong> Karena kodenya sedikit lebih panjang, saya akan memposting kode sumber program dalam beberapa bagian dengan deskripsi untuk setiap komponen agar lebih mudah dipahami. Untuk kode lengkap bisa download link di bawah berikut.
+                                <div class="text-center mt-3">
+                                    <img src="assets/program.jpg" class="img-fluid rounded" alt="Program Resource">
+                                </div>
+                            </li>
+                            <li>
+                                <strong>App penggerakan robot:</strong> Aplikasi ini dirancang untuk mengontrol lengan robot (robot manipulator) dengan 6 Degrees of Freedom (DOF). Sistem ini berfungsi untuk:
+                                <ul>
+                                    <li>Kontrol Manual Robot Arm: Memungkinkan pengguna mengatur posisi setiap bagian lengan robot secara manual menggunakan slider yang ada.</li>
+                                    <li>Perekaman dan Pemutaran Gerakan: Memberikan kemampuan untuk merekam gerakan yang dilakukan pada robot, lalu memutarnya kembali untuk tugas-tugas otomatisasi.</li>
+                                    <li>Integrasi Visual Servoing: Meskipun tidak terlihat eksplisit dalam antarmuka, aplikasi ini mendukung visual servoing untuk meningkatkan presisi gerakan.</li>
+                                </ul>
+                                <div class="text-center mt-3">
+                                    <img src="assets/app.jpg" class="img-fluid rounded" alt="App Resource">
+                                </div>
+                            </li>
+                            <li>
+                                <strong>Wiring:</strong> Rangkaian untuk mengontrol robot manipulator berbasis ESP32 Dev Kit dengan menggunakan servo motor. Komponen-komponennya bekerja sebagai berikut:
+                                <ul>
+                                    <li>ESP32 mengontrol pergerakan servo berdasarkan sinyal PWM (Pulse Width Modulation).</li>
+                                    <li>Step-down converter memastikan semua komponen mendapat tegangan yang sesuai (5V).</li>
+                                    <li>Kombinasi ini memungkinkan sistem robot manipulator bekerja dengan efisien dan aman.</li>
+                                </ul>
+                                <div class="text-center mt-3">
+                                    <img src="assets/wiring.jpg" class="img-fluid rounded" alt="Wiring Resource">
+                                </div>
+                            </li>
+                        </ul>
+                        <a class="btn btn-primary btn-lg" href="#">Download</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Download Section -->
+        <section class="py-5 bg-light">
+            <div class="container px-lg-5">
+                <div class="text-center mb-4">
+                    <h2 class="display-6 fw-bold">Download</h2>
+                    <p class="fs-5">Get our latest resources, including design files, apps, and programs.</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 text-center mb-3">
+                        <a href="download/TotalArm.zip" class="btn btn-primary btn-lg w-100" download>Download Design</a>
+                    </div>
+                    <div class="col-md-4 text-center mb-3">
+                        <a href="download/app_penggerakan_robot.zip" class="btn btn-success btn-lg w-100" download>Download App</a>
+                    </div>
+                    <div class="col-md-4 text-center mb-3">
+                        <a href="download/program_robot.zip" class="btn btn-warning btn-lg w-100" download>Download Program</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5">
+            <div class="container px-lg-5">
+                <div class="text-center mb-5">
+                    <h2 class="display-6 fw-bold">Contact</h2>
+                    <p class="fs-5">Meet our team members:</p>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
